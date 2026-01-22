@@ -1,5 +1,5 @@
 # CMPivot-Queries
-Collection of cmpivot queries for endpoint engineering, audits etc.
+A small collection of CMPivot queries for endpoint engineering and operational validation.
 
 ## Scope
 

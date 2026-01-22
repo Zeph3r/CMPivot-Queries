@@ -14,4 +14,17 @@ Registry(
 | summarize CurrentBuild = max(Value) by Device
 | project Device, CurrentBuild, IsWindows11 = CurrentBuild >= '22000'
 ```
+## Detect Microsoft Office Installations (Pre-OffScrub Targeting)
 
+Identifies devices with Microsoft Office components using SCCM
+InstalledSoftware inventory. CMPivot does not reliably distinguish
+MSI-based Office from Click-to-Run; therefore this query is intended
+for **initial scoping only**.
+
+
+```kusto
+InstalledSoftware
+| where Publisher == 'Microsoft Corporation'
+| where ProductName contains 'Office'
+| project Device, ProductName
+```

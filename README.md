@@ -101,8 +101,7 @@ If you're looking for a broader set of general CMPivot examples, that repo is a 
 
 ## License
 
-_Add a license of your choice (for example, MIT) so others know how they may use these queries._
-
+MIT
 ## Disclaimer
 
 Provided as-is, with no warranty. Not affiliated with or endorsed by Microsoft. Validate against your own environment before broad use — entity availability and property names can vary across Configuration Manager builds.
